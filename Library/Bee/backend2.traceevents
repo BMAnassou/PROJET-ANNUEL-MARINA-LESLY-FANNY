@@ -1,0 +1,641 @@
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1709763586565130, "dur":127, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763586605425, "dur":62, "ph":"X", "name": "EmitBuildStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763586565388, "dur":46779, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763586612177, "dur":587, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763586612805, "dur":1485, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763586614361, "dur":91, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":0, "ts":1709763586614462, "dur":112, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":0, "ts":1709763586614581, "dur":94, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":0, "ts":1709763586614682, "dur":125, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1709763586614815, "dur":96, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/level0" }}
+,{ "pid":12345, "tid":0, "ts":1709763586614917, "dur":105, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/level0.resS" }}
+,{ "pid":12345, "tid":0, "ts":1709763586615029, "dur":103, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":0, "ts":1709763586615137, "dur":100, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":0, "ts":1709763586615245, "dur":119, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":0, "ts":1709763586615372, "dur":141, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":0, "ts":1709763586615527, "dur":155, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1709763586615690, "dur":103, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/boot.config" }}
+,{ "pid":12345, "tid":0, "ts":1709763586615800, "dur":98, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":0, "ts":1709763586615903, "dur":90, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":0, "ts":1709763586616023, "dur":102, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586616130, "dur":86, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586616220, "dur":86, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586616311, "dur":87, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586616767, "dur":115, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586616893, "dur":122, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586617024, "dur":84, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586617113, "dur":85, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586617203, "dur":84, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586617292, "dur":82, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586617378, "dur":80, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586617463, "dur":81, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586617549, "dur":85, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586617639, "dur":83, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586617727, "dur":81, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586617813, "dur":82, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586617901, "dur":83, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586617989, "dur":83, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586618077, "dur":118, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586618205, "dur":182, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586618408, "dur":151, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586618766, "dur":168, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586618943, "dur":125, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586619075, "dur":155, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586619237, "dur":107, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586619350, "dur":110, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586619466, "dur":152, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586619631, "dur":127, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586619766, "dur":188, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586619962, "dur":151, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586620123, "dur":121, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586620251, "dur":162, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586620424, "dur":117, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586620548, "dur":125, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586620680, "dur":114, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586620800, "dur":120, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586620927, "dur":119, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586621147, "dur":124, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586621278, "dur":122, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586621406, "dur":115, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586621528, "dur":121, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586621656, "dur":111, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586621774, "dur":121, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586621901, "dur":120, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586622028, "dur":121, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586622156, "dur":118, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586622281, "dur":114, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586622402, "dur":119, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586622527, "dur":117, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586622651, "dur":121, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586622779, "dur":126, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586622912, "dur":115, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586623040, "dur":114, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586623161, "dur":114, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586623563, "dur":125, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586623696, "dur":116, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586623819, "dur":115, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586623941, "dur":122, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586624069, "dur":144, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586624220, "dur":78, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586624302, "dur":86, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586624392, "dur":78, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586624474, "dur":80, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586624558, "dur":85, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586624648, "dur":77, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586624730, "dur":84, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586624818, "dur":87, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586624911, "dur":80, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586624996, "dur":82, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586625083, "dur":122, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586625213, "dur":103, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586625324, "dur":150, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586625563, "dur":119, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586625691, "dur":108, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586625806, "dur":97, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586625909, "dur":105, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586626021, "dur":118, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586626147, "dur":108, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586626262, "dur":102, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586626371, "dur":109, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586626486, "dur":100, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586626593, "dur":101, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586626709, "dur":119, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586626838, "dur":132, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586626984, "dur":109, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586627101, "dur":98, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586627204, "dur":111, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586627322, "dur":87, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586627414, "dur":75, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586627571, "dur":99, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586627675, "dur":81, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586627760, "dur":78, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586627842, "dur":84, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586627930, "dur":85, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586628019, "dur":74, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586628097, "dur":74, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586628175, "dur":108, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586628288, "dur":84, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/app.info" }}
+,{ "pid":12345, "tid":0, "ts":1709763586628377, "dur":92, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":0, "ts":1709763586628475, "dur":123, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":0, "ts":1709763586628605, "dur":85, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY.exe" }}
+,{ "pid":12345, "tid":0, "ts":1709763586628694, "dur":83, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586628781, "dur":79, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586628864, "dur":85, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":0, "ts":1709763586628953, "dur":83, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":0, "ts":1709763586629039, "dur":81, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":0, "ts":1709763586629123, "dur":84, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":0, "ts":1709763586629211, "dur":82, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":0, "ts":1709763586629348, "dur":89, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":0, "ts":1709763586629442, "dur":87, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":0, "ts":1709763586629532, "dur":81, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":0, "ts":1709763586629617, "dur":85, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":0, "ts":1709763586629705, "dur":79, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":0, "ts":1709763586629787, "dur":79, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":0, "ts":1709763586629870, "dur":85, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":0, "ts":1709763586629959, "dur":79, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":0, "ts":1709763586630041, "dur":81, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":0, "ts":1709763586630126, "dur":85, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":0, "ts":1709763586630215, "dur":84, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":0, "ts":1709763586630303, "dur":78, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":0, "ts":1709763586630385, "dur":83, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":0, "ts":1709763586630471, "dur":84, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":0, "ts":1709763586630558, "dur":81, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles EXECUTABLES/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":0, "ts":1709763586614347, "dur":16293, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763586630642, "dur":2134332, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763588764976, "dur":508, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763588765486, "dur":119, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763588765606, "dur":51, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763588765657, "dur":56, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763588765743, "dur":58, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763588766050, "dur":51, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763588766104, "dur":100, "ph":"X", "name": "EmitBuildFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763588766104, "dur":101, "ph":"X", "name": "EmitBuildFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763588766206, "dur":20452, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1709763586615186, "dur":15468, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1709763586630661, "dur":19563, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1709763586693867, "dur":57, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1709763586658205, "dur":35739, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":1, "ts":1709763586693952, "dur":15633, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1709763586709737, "dur":19805, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1709763586729545, "dur":821, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1709763586730474, "dur":373, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586730941, "dur":1224, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586732454, "dur":749, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\bomar\\PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586733208, "dur":1361, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\bomar\\PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586734574, "dur":3936, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\bomar\\PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586738516, "dur":2878, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\bomar\\PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586741398, "dur":6803, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\bomar\\PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586748206, "dur":1600, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\bomar\\PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586749810, "dur":2707, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\bomar\\PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586752525, "dur":1904, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\bomar\\PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586754434, "dur":1681, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Facades\\netstandard.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586756120, "dur":6246, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Mono.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586762372, "dur":3950, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586766327, "dur":3834, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586770166, "dur":11084, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586781259, "dur":1579, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586782845, "dur":12328, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586795178, "dur":4440, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Drawing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586799623, "dur":1532, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586801161, "dur":1528, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586802694, "dur":2892, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586805602, "dur":2364, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586807971, "dur":1903, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Numerics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586809880, "dur":5905, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586815803, "dur":3343, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586819152, "dur":1983, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586821142, "dur":1503, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586822650, "dur":1360, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586824015, "dur":16694, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586840714, "dur":9017, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586849739, "dur":47566, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\mscorlib.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586897310, "dur":1024, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Player7c235438-inputdata.json" }}
+,{ "pid":12345, "tid":1, "ts":1709763586899259, "dur":48048, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.BuildTools.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586947312, "dur":12557, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586959877, "dur":196502, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.CSharpSupport.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587156385, "dur":8467, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.DotNet.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587164858, "dur":2288, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.NativeProgramSupport.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587167154, "dur":13254, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Stevedore.Program.exe" }}
+,{ "pid":12345, "tid":1, "ts":1709763587180413, "dur":1633, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.TinyProfiler2.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587182051, "dur":89606, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.GNU.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587271666, "dur":157954, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.LLVM.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587429626, "dur":76790, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.VisualStudio.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587506424, "dur":64907, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.Xcode.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587571337, "dur":4041, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Tools.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587575384, "dur":5123, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.TundraBackend.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587580513, "dur":703, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.VisualStudioSolution.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587581222, "dur":1043, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\BeeBuildProgramCommon.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587582272, "dur":1197, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\BeeBuildProgramCommon.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587583483, "dur":14705, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\BeeLocalCacheTool.exe" }}
+,{ "pid":12345, "tid":1, "ts":1709763587598193, "dur":45975, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587644174, "dur":3806, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\NiceIO.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587647987, "dur":801, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\PlayerBuildProgramLibrary.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587648795, "dur":947, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\PlayerBuildProgramLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587649748, "dur":1850, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\ScriptCompilationBuildProgram.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587651604, "dur":2819, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\ScriptCompilationBuildProgram.exe" }}
+,{ "pid":12345, "tid":1, "ts":1709763587654429, "dur":49102, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\SharpYaml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587703545, "dur":42645, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Api.Attributes.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587746195, "dur":19490, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587765691, "dur":38315, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587804011, "dur":39085, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587843102, "dur":29062, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587872170, "dur":637, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Api.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587872811, "dur":693, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Bee.BuildLogic.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587873510, "dur":733, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587874248, "dur":561, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Linker.Api.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763587874813, "dur":36976, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Options.dll" }}
+,{ "pid":12345, "tid":1, "ts":1709763586693949, "dur":1217878, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1709763587911841, "dur":230, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1709763587912081, "dur":55, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1709763588740889, "dur":73, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1709763587912542, "dur":828449, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1709763588760358, "dur":555, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1709763588760355, "dur":561, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1709763588764812, "dur":79, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1709763588760973, "dur":3948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1709763586615274, "dur":15392, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763586631191, "dur":543, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Api.dll" }}
+,{ "pid":12345, "tid":2, "ts":1709763586632150, "dur":1221, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Api.Attributes.dll" }}
+,{ "pid":12345, "tid":2, "ts":1709763586630679, "dur":4396, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763586635077, "dur":15165, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763586650248, "dur":374, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":2, "ts":1709763586673456, "dur":127, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763586726824, "dur":68, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763586673607, "dur":53314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":2, "ts":1709763586727126, "dur":11770, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1709763586727122, "dur":11777, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1709763586743501, "dur":56, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763586738969, "dur":4781, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1709763586744006, "dur":521934, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1709763586744001, "dur":521943, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1709763587265971, "dur":54, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763587323989, "dur":92, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763587266391, "dur":57727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1709763587324431, "dur":380, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763587395317, "dur":1223, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763587324820, "dur":71822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1709763587416922, "dur":87, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763587397054, "dur":20000, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1709763587417303, "dur":99, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763587446278, "dur":25486, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763587417411, "dur":54395, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1709763587493402, "dur":92, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763587472250, "dur":21287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1709763587493842, "dur":52, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763587502861, "dur":95, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763587493898, "dur":9092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1709763587503296, "dur":53, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763587522347, "dur":88, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1709763587503354, "dur":19121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1709763587522833, "dur":1242143, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763586615327, "dur":15357, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763586630689, "dur":2574, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763586633264, "dur":16969, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763586650292, "dur":17123, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1709763586650249, "dur":17169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1709763586667433, "dur":170, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763586684472, "dur":176, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763586668613, "dur":16069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1709763586684970, "dur":547, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1709763586685537, "dur":59, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763586701532, "dur":59, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763586687348, "dur":14341, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1709763586701825, "dur":7260, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1709763586701821, "dur":7268, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1709763586714099, "dur":64, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763586709143, "dur":5104, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1709763586714429, "dur":14803, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
+,{ "pid":12345, "tid":3, "ts":1709763586714425, "dur":14811, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1709763586734607, "dur":71, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763586729443, "dur":5262, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1709763586734853, "dur":252388, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763586734849, "dur":252399, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763586987274, "dur":55, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763586998680, "dur":540, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763586988878, "dur":10378, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587043591, "dur":98, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763586999668, "dur":44066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587044039, "dur":87, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587063980, "dur":114, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587044134, "dur":20005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587064460, "dur":55, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587137934, "dur":118, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587064523, "dur":73574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587138644, "dur":292, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587150325, "dur":107, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587138945, "dur":11534, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587181800, "dur":1896, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587150841, "dur":33000, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587200876, "dur":129, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587184550, "dur":16496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587201565, "dur":114, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587213281, "dur":101, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587201689, "dur":11829, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587244147, "dur":92, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587213846, "dur":30437, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587297505, "dur":122, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587244601, "dur":53097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587395197, "dur":146, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587298096, "dur":97287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587412453, "dur":86, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587395721, "dur":16856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587453163, "dur":18704, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587412967, "dur":58933, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587472214, "dur":74, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587513516, "dur":84, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587472295, "dur":41342, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1709763587513931, "dur":71, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587531191, "dur":92, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1709763587514009, "dur":17312, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1709763587531576, "dur":1233422, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763586615398, "dur":15297, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763586630699, "dur":2644, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763586633343, "dur":16888, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763586650279, "dur":272637, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1709763586650248, "dur":272672, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1709763586922944, "dur":53, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763586937706, "dur":89, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763586923001, "dur":15041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1709763586944718, "dur":404, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763586938369, "dur":6795, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763586965191, "dur":1010, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763586945759, "dur":20479, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763586981216, "dur":230, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763586966604, "dur":14903, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763586981945, "dur":97, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587003949, "dur":1723, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763586982048, "dur":23663, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587006066, "dur":54, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587023225, "dur":6649, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587006127, "dur":23784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587076336, "dur":106, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587030383, "dur":46145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587076929, "dur":160, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587100149, "dur":99, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587077099, "dur":23315, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587101306, "dur":65, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587111417, "dur":90, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587101382, "dur":10168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587111847, "dur":60, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587125448, "dur":275, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587111915, "dur":14051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587126883, "dur":142, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587159286, "dur":107, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587127035, "dur":32653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587161240, "dur":75, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587182746, "dur":1043, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587161325, "dur":22570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587224588, "dur":102, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587184224, "dur":40510, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587268446, "dur":92, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587225118, "dur":43562, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587269020, "dur":312, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587324130, "dur":409, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587269344, "dur":55237, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587325496, "dur":194, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587398410, "dur":478, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587325699, "dur":73228, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587411215, "dur":83, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587399316, "dur":12032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587433204, "dur":184, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587411663, "dur":21935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587434093, "dur":70, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587445542, "dur":91, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587434171, "dur":11502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587445997, "dur":25669, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587493502, "dur":79, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587471678, "dur":21934, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1709763587493844, "dur":216, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587532868, "dur":92, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1709763587494407, "dur":38590, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1709763587533235, "dur":1231781, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586615476, "dur":15229, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586630710, "dur":2829, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586633540, "dur":16687, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586662439, "dur":60, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586656291, "dur":6431, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1709763586662729, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1709763586684734, "dur":54, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586663685, "dur":21125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1709763586684818, "dur":1025, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1709763586916442, "dur":98, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586685906, "dur":230670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1709763586928157, "dur":88, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586916888, "dur":11531, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763586929025, "dur":57, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586950925, "dur":1252, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586929090, "dur":23257, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763586952634, "dur":59, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586964820, "dur":69, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586952704, "dur":12212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763586980378, "dur":75, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586965236, "dur":15250, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587009420, "dur":97, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763586980769, "dur":28779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587047538, "dur":88, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587010012, "dur":38392, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587100051, "dur":84, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587048710, "dur":51455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587120038, "dur":97, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587100504, "dur":19716, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587140199, "dur":108, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587120697, "dur":19672, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587159791, "dur":85, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587140728, "dur":19289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587160490, "dur":58, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587182839, "dur":1064, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587160560, "dur":23375, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587185694, "dur":59, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587263589, "dur":90, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587185765, "dur":77958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587266683, "dur":52, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587297071, "dur":103, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587266743, "dur":30597, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587388235, "dur":105, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587297715, "dur":90677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587388728, "dur":51, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587412771, "dur":71, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587388787, "dur":24176, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587445626, "dur":25968, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587413267, "dur":58666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587492998, "dur":98, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587472516, "dur":20627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1709763587493419, "dur":246, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587512567, "dur":96, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587493673, "dur":19033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":5, "ts":1709763587526699, "dur":125, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1709763587513044, "dur":13970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1709763587527624, "dur":1237345, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586615568, "dur":15148, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586630721, "dur":2617, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586633339, "dur":16896, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586650249, "dur":547, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":6, "ts":1709763586699172, "dur":174, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586676633, "dur":22747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":6, "ts":1709763586699630, "dur":408, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1709763586712637, "dur":72, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586701291, "dur":11450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1709763586712978, "dur":406, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1709763586729625, "dur":57, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586714069, "dur":15638, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1709763586729873, "dur":456, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1709763586926496, "dur":89, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586730396, "dur":196231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1709763586933893, "dur":94, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586926975, "dur":7047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1709763586942569, "dur":72, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586934292, "dur":8380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1709763586964491, "dur":89, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586942958, "dur":21708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":6, "ts":1709763586965551, "dur":804, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586975128, "dur":93, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586966363, "dur":8891, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1709763587007604, "dur":88, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763586975552, "dur":32175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1709763587045669, "dur":86, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587008200, "dur":37594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":6, "ts":1709763587046869, "dur":60, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587108371, "dur":112, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587046938, "dur":61747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1709763587109070, "dur":51, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587144057, "dur":108, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587109130, "dur":35075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1709763587144774, "dur":150, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1709763587144950, "dur":228, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587180807, "dur":2786, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587145187, "dur":38445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1709763587192979, "dur":418, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587277581, "dur":96, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587193408, "dur":84309, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1709763587278180, "dur":68, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587317003, "dur":113, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587278258, "dur":38899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1709763587317498, "dur":56, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587477018, "dur":550, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587317562, "dur":160046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1709763587480529, "dur":416, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587498361, "dur":93, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587480955, "dur":17634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1709763587499057, "dur":54, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587513809, "dur":85, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1709763587499118, "dur":14814, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/level0.resS" }}
+,{ "pid":12345, "tid":6, "ts":1709763587514158, "dur":1250844, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586615627, "dur":15100, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586630732, "dur":2506, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586633240, "dur":522, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586633763, "dur":16484, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586650311, "dur":31951, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":7, "ts":1709763586650249, "dur":32017, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1709763586682286, "dur":317, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586693637, "dur":60, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586685784, "dur":7942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1709763586693911, "dur":7280, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
+,{ "pid":12345, "tid":7, "ts":1709763586693907, "dur":7287, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1709763586707324, "dur":84, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586701680, "dur":5758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1709763586707635, "dur":465, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1709763586874472, "dur":100, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586708601, "dur":166002, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1709763586874786, "dur":17290, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\mscorlib.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763586874781, "dur":17299, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763586892100, "dur":120, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586910313, "dur":436, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586892583, "dur":19285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763586912349, "dur":1547, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586947380, "dur":2623, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586913905, "dur":36124, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763586950888, "dur":1071, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586994699, "dur":90, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586951969, "dur":43222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763586995555, "dur":61, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587008954, "dur":119, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763586995624, "dur":13489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763587027775, "dur":2503, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587009759, "dur":20615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763587072050, "dur":108, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587030685, "dur":41519, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763587072733, "dur":128, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587140984, "dur":84, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587072870, "dur":68235, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763587141572, "dur":101, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587172133, "dur":105, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587141683, "dur":30736, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763587172870, "dur":71, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587192984, "dur":870, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587172951, "dur":20986, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763587194365, "dur":56, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587245975, "dur":2194, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587194429, "dur":53790, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763587248578, "dur":78, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587259086, "dur":93, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587248665, "dur":10552, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763587292435, "dur":131, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587259664, "dur":32942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763587418390, "dur":99, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587292977, "dur":125552, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763587418958, "dur":54, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587444086, "dur":131, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587419020, "dur":25239, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763587456789, "dur":16111, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587444678, "dur":28256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763587473170, "dur":419231, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763587473164, "dur":419240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763588040969, "dur":88, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1709763587892473, "dur":148627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":7, "ts":1709763588041320, "dur":723662, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586615705, "dur":15083, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586630789, "dur":2762, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586633552, "dur":16719, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586650272, "dur":330, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1709763586680901, "dur":71, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586663167, "dur":17833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1709763586681147, "dur":28822, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1709763586681143, "dur":28829, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1709763586715744, "dur":66, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586710032, "dur":5805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1709763586716033, "dur":575, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1709763586716629, "dur":50, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586733118, "dur":106, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586717379, "dur":15868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1709763586733427, "dur":437, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1709763586759679, "dur":88, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586735815, "dur":23989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1709763586760058, "dur":86537, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
+,{ "pid":12345, "tid":8, "ts":1709763586760056, "dur":86543, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY.exe" }}
+,{ "pid":12345, "tid":8, "ts":1709763586858215, "dur":65, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586846656, "dur":11651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY.exe" }}
+,{ "pid":12345, "tid":8, "ts":1709763586858471, "dur":372, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":8, "ts":1709763586882584, "dur":86, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586860097, "dur":22604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":8, "ts":1709763586893210, "dur":72, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586884346, "dur":8967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763586931287, "dur":402, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586893561, "dur":38163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763586948366, "dur":1401, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586932126, "dur":17714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763586950131, "dur":66, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586960567, "dur":87, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586950208, "dur":10572, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587003727, "dur":6732, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763586961173, "dur":49322, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587018622, "dur":10549, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587047215, "dur":111, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587029183, "dur":19092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587099894, "dur":90, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587048635, "dur":51385, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587153923, "dur":329, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587100422, "dur":53898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587155301, "dur":339, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587176534, "dur":100, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587155650, "dur":21024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587201463, "dur":525, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587176999, "dur":25075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587202447, "dur":58, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587257856, "dur":91, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587202513, "dur":55474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587258276, "dur":51, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587274158, "dur":120, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587258335, "dur":15994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587275297, "dur":400, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587321591, "dur":96, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587275707, "dur":46583, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587322927, "dur":73, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587429816, "dur":92, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587323103, "dur":106843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587430269, "dur":70, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587440452, "dur":99, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587430348, "dur":10256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587456681, "dur":15484, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587441563, "dur":30634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587472582, "dur":59, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587489370, "dur":91, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587472647, "dur":16855, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1709763587502407, "dur":146, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587489828, "dur":12771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":8, "ts":1709763587502938, "dur":107, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587522782, "dur":89, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1709763587503052, "dur":19851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"EXECUTABLES/PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY_Data/level0" }}
+,{ "pid":12345, "tid":8, "ts":1709763587523161, "dur":1241811, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1709763588807221, "dur":6378, "ph":"X", "name": "ProfilerWriteOutput" }
+,
