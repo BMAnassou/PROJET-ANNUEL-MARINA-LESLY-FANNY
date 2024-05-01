@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: PROJET_ANNUEL_3RVJV_MARINA_LESLY_FANNY
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: 40176e30745f6d14db377a3856909e0c, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -155,7 +155,8 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Standalone: com.DefaultCompany.PROJET-ANNUEL-3RVJV-MARINA-LESLY-FANNY
   buildNumber:
     Standalone: 0
     VisionOS: 0
