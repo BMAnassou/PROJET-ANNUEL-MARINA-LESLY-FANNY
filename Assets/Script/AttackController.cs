@@ -11,9 +11,10 @@ public class AttackController : MonoBehaviour
     public Material attackStateMaterial;
 
     public int unitDamage;
+    public bool isPlayer;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy") && targetToAttack == null)
+        if (isPlayer && other.CompareTag("Enemy") && targetToAttack == null)
         {
             targetToAttack = other.transform;
         }
@@ -23,7 +24,7 @@ public class AttackController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Enemy") && targetToAttack != null)
+        if (isPlayer && other.CompareTag("Enemy") && targetToAttack != null)
         {
             targetToAttack = null;
         }
@@ -53,6 +54,6 @@ public class AttackController : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position,4f);
         
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(transform.position,4.8f);
+        Gizmos.DrawWireSphere(transform.position,5f);
     }
 }
