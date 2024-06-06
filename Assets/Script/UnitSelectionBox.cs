@@ -109,9 +109,16 @@ public class UnitSelectionBox : MonoBehaviour
     {
         foreach (var unit in UnitSelectionManager.Instance.allUnitsList)
         {
-            if (selectionBox.Contains(myCam.WorldToScreenPoint(unit.transform.position)))
+            if (unit != null && unit.gameObject.activeInHierarchy)
             {
-                UnitSelectionManager.Instance.DragSelect(unit);
+               
+                Vector3 screenPoint = myCam.WorldToScreenPoint(unit.transform.position);
+            
+               
+                if (selectionBox.Contains(screenPoint))
+                {
+                    UnitSelectionManager.Instance.DragSelect(unit);
+                }
             }
         }
     }

@@ -7,12 +7,14 @@ public class Unit : MonoBehaviour
 {
     public float unitHealth;
     public float unitMaxHealth;
+    
 
     public HealthTracker healthTracker;
     void Start()
     {
         UnitSelectionManager.Instance.allUnitsList.Add(gameObject);
         unitHealth = unitMaxHealth;
+        UpdateHealthUI();
     }
 
    
@@ -24,7 +26,10 @@ public class Unit : MonoBehaviour
 
     private void UpdateHealthUI()
     {
-        healthTracker.UpdateSliderValue(unitHealth, unitMaxHealth);
+        if (healthTracker != null)
+        {
+            healthTracker.UpdateSliderValue(unitHealth, unitMaxHealth);
+        }
         if (unitHealth <= 0 )
         {
             Destroy(gameObject);
