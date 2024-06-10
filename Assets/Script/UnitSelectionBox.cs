@@ -24,6 +24,8 @@ public class UnitSelectionBox : MonoBehaviour
  
     private void Update()
     {
+        
+        
         // When Clicked
         if (Input.GetMouseButtonDown(0))
         {

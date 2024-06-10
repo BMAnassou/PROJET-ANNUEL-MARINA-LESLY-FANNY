@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5587921014454662969}
-  - component: {fileID: 3398222038864707112}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -33,26 +32,6 @@ Transform:
   - {fileID: 8334767538848889081}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3398222038864707112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57023523475078528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 951099334
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
 --- !u!1001 &7468416383846337632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63,7 +42,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5918388479639863879, guid: 1e007ad1a93abe04c9959c08eaf3899c, type: 3}
       propertyPath: GlobalObjectIdHash
-      value: 951099334
+      value: 3529388371
       objectReference: {fileID: 0}
     - target: {fileID: 693826190382472290, guid: 1e007ad1a93abe04c9959c08eaf3899c, type: 3}
       propertyPath: m_Name
@@ -117,7 +96,8 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5918388479639863879, guid: 1e007ad1a93abe04c9959c08eaf3899c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

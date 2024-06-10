@@ -120,13 +120,13 @@ GameObject:
   - component: {fileID: 735560513699127651}
   - component: {fileID: 5721915819250271953}
   - component: {fileID: 210596838176249266}
-  - component: {fileID: 8004512042555130166}
   - component: {fileID: 7196523512692376717}
   - component: {fileID: 5006752483797187379}
   - component: {fileID: 8200018542655783219}
   - component: {fileID: 6595823940415482380}
   - component: {fileID: -2112384891420975977}
   - component: {fileID: -5863693938415586295}
+  - component: {fileID: 7688670953885497964}
   m_Layer: 7
   m_Name: UnitEnemy
   m_TagString: Untagged
@@ -247,22 +247,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &8004512042555130166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7367833486254308432}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bd034ca34278584e898c6414ac70097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ground:
-    serializedVersion: 2
-    m_Bits: 64
-  isCommandedToMove: 0
 --- !u!114 &7196523512692376717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,6 +279,7 @@ MonoBehaviour:
   followStateMaterial: {fileID: 2100000, guid: f148ef4daf528574d98d22a8c8496e3f, type: 2}
   attackStateMaterial: {fileID: 2100000, guid: 09e142f0614e17841a26221de7f55ef3, type: 2}
   unitDamage: 10
+  isPlayer: 0
 --- !u!95 &8200018542655783219
 Animator:
   serializedVersion: 5
@@ -377,6 +362,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &7688670953885497964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7367833486254308432}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e79bec8193b1524894008b926723bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ground:
+    serializedVersion: 2
+    m_Bits: 64
+  isCommandedToMove: 0
 --- !u!1001 &4707812571809650470
 PrefabInstance:
   m_ObjectHideFlags: 0

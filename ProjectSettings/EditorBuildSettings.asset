@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NiveauMulti.unity
     guid: 52f5c81cf72101342839a150e7e96ef7
   - enabled: 1
