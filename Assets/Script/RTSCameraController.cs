@@ -74,6 +74,10 @@ public class RTSCameraController : MonoBehaviour
         {
             isMovementLocked = !isMovementLocked;
             followTransform = null;
+            if (isMovementLocked)
+            {
+                ChangeCursor(CursorArrow.DEFAULT);
+            }
         }
     }
 

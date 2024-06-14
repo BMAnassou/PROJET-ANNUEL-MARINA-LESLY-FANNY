@@ -591,6 +591,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &231396710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 231396712}
+  - component: {fileID: 231396711}
+  m_Layer: 0
+  m_Name: RuntimeStatsMonitor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &231396711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231396710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17737e0516da2445b9b0077ae2bd9b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Visible: 1
+  m_MaxRefreshRate: 30
+  <CustomStyleSheet>k__BackingField: {fileID: 0}
+  <PanelSettingsOverride>k__BackingField: {fileID: 0}
+  <Position>k__BackingField:
+    <OverridePosition>k__BackingField: 1
+    m_PositionLeftToRight: 0
+    m_PositionTopToBottom: 0
+  <Configuration>k__BackingField: {fileID: 11400000, guid: 8f1b4e3792d8446399527749cfb591a2, type: 2}
+--- !u!4 &231396712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231396710}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.822666, y: -6.6045036, z: 67.60007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &233528603
 GameObject:
   m_ObjectHideFlags: 0
@@ -3208,7 +3261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30b9be73783c94d4394c80214895ffe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  limit: 120
+  limit: 30
 --- !u!4 &1230128580
 Transform:
   m_ObjectHideFlags: 0
@@ -3631,6 +3684,7 @@ GameObject:
   - component: {fileID: 1662332087}
   - component: {fileID: 1662332089}
   - component: {fileID: 1662332088}
+  - component: {fileID: 1662332090}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -3717,6 +3771,18 @@ MonoBehaviour:
     OldPrefabList: []
   RunInBackground: 1
   LogLevel: 0
+--- !u!114 &1662332090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662332086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a64e8ce049f86845980f4755ba641ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1664196818
 GameObject:
   m_ObjectHideFlags: 0
@@ -4605,6 +4671,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1949956506}
+  - component: {fileID: 1949956509}
   - component: {fileID: 1949956507}
   - component: {fileID: 1949956508}
   m_Layer: 0
@@ -4641,7 +4708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e60588652a60615478633510a714e975, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingPrefab: {fileID: 7466524613123851677, guid: 701c8f197af30bf4498ac8bb189d302e, type: 3}
+  buildingPrefab: {fileID: 1588934414127028301, guid: abbbe2b71471bf046b85f574b9c0788b, type: 3}
   placementLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -4657,6 +4724,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd280efda2817b4e9c278b0bbbc3cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1949956509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949956504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 4122248641
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
 --- !u!1 &1958311181
 GameObject:
   m_ObjectHideFlags: 0
@@ -5205,3 +5293,4 @@ SceneRoots:
   - {fileID: 1949956506}
   - {fileID: 1662332087}
   - {fileID: 971610376}
+  - {fileID: 231396712}

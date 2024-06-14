@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
 
-public class Building : MonoBehaviour
+public class Building : NetworkBehaviour
 {
     public GameObject buildingPrefab;
     private GameObject currentBuilding;
@@ -13,40 +14,64 @@ public class Building : MonoBehaviour
 
     void Update()
     {
+        if (!IsOwner) return;
         if (isPlacing)
         {
             MoveBuildingToMouse();
             UpdateBuildingColor();
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && IsValidPlacement())
             {
-                PlaceBuilding();
+                PlaceBuildingServerRpc(currentBuilding.transform.position);
             }
         }
     }
 
     public void StartPlacing()
     {
-        Debug.Log("StartPlacing called");
-        if (!isPlacing)
+        if (!isPlacing && IsOwner)
         {
-            Debug.Log("Start placing the building");
             isPlacing = true;
             currentBuilding = Instantiate(buildingPrefab);
             buildingRenderer = currentBuilding.GetComponent<Renderer>();
-            collisionDetector = currentBuilding.GetComponentInChildren<BuildingCollisionDetector>(); // Get the detector from the Cube
-            UpdateBuildingColor(); // Initial update to set the color
+            collisionDetector = currentBuilding.GetComponentInChildren<BuildingCollisionDetector>();
+            UpdateBuildingColor();
         }
     }
 
-    void PlaceBuilding()
+    [ServerRpc]
+    void PlaceBuildingServerRpc(Vector3 position, ServerRpcParams rpcParams = default)
     {
-        if (IsValidPlacement())
+        GameObject newBuilding = Instantiate(buildingPrefab, position, Quaternion.identity);
+        newBuilding.GetComponent<NetworkObject>().SpawnWithOwnership(rpcParams.Receive.SenderClientId);
+
+        // Notify clients to finalize the placement
+        FinalizePlacementClientRpc(newBuilding.GetComponent<NetworkObject>().NetworkObjectId);
+    }
+
+    [ClientRpc]
+    void FinalizePlacementClientRpc(ulong networkObjectId)
+    {
+        NetworkObject networkObject = NetworkManager.Singleton.SpawnManager.SpawnedObjects[networkObjectId];
+        GameObject newBuilding = networkObject.gameObject;
+
+        // Disable placement-related components
+        BuildingCollisionDetector detector = newBuilding.GetComponentInChildren<BuildingCollisionDetector>();
+        if (detector != null)
         {
-            Debug.Log("Placing the building");
-            isPlacing = false;
-            SetBuildingColor(Color.white); // Change color to default or fixed color
-            currentBuilding = null; // Reset current building
+            Destroy(detector);
+        }
+
+        Renderer renderer = newBuilding.GetComponent<Renderer>();
+        if (renderer != null)
+        {
+            renderer.material.color = Color.white; // Set final color
+        }
+
+        if (IsOwner)
+        {
+            currentBuilding = null; // Reset current building reference
+            isPlacing = false;      // Stop placing
         }
     }
 
@@ -65,12 +90,10 @@ public class Building : MonoBehaviour
     {
         if (IsValidPlacement())
         {
-            Debug.Log("Valid placement");
             SetBuildingColor(Color.green);
         }
         else
         {
-            Debug.Log("Invalid placement");
             SetBuildingColor(Color.red);
         }
     }
@@ -86,13 +109,9 @@ public class Building : MonoBehaviour
     bool IsValidPlacement()
     {
         // Check if the building is colliding with another building
-        if (collisionDetector != null)
+        if (collisionDetector != null && collisionDetector.isColliding)
         {
-            Debug.Log("Collision detector state: " + collisionDetector.isColliding);
-            if (collisionDetector.isColliding)
-            {
-                return false;
-            }
+            return false;
         }
 
         // Additional checks can be added here (e.g., terrain suitability)
