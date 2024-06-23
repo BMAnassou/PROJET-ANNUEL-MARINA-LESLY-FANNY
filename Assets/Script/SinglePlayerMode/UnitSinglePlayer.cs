@@ -10,11 +10,7 @@ public class UnitSinglePlayer : MonoBehaviour
 
     public ChooseElement.Elements unitElement;
 
-    public float UnitMaxHealth
-    {
-        get => unitMaxHealth;
-        set => unitMaxHealth = value;
-    }
+    
 
     public HealthTracker healthTracker;
 
@@ -23,8 +19,8 @@ public class UnitSinglePlayer : MonoBehaviour
         UnitSelectionManagerSinglePlayer.Instance.allUnitsList.Add(gameObject);
         unitHealth = unitMaxHealth;
 
-        // Récupérer la sélection de l'élément à partir de PlayerPrefs
-        int selectedElementIndex = PlayerPrefs.GetInt("SelectedElement", 0); // 0 est la valeur par défaut
+       
+        int selectedElementIndex = PlayerPrefs.GetInt("SelectedElement", 0); 
         AssignElement((ChooseElement.Elements)selectedElementIndex);
 
         UpdateHealthUI();

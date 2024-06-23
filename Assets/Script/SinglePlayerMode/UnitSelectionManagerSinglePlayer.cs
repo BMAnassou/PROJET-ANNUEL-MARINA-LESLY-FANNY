@@ -14,7 +14,7 @@ public class UnitSelectionManagerSinglePlayer : MonoBehaviour
     private Camera cam;
     public LayerMask attackable;
     public bool attackCursorVisible;
-    
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -31,6 +31,7 @@ public class UnitSelectionManagerSinglePlayer : MonoBehaviour
     {
         cam = Camera.main;
     }
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -46,21 +47,18 @@ public class UnitSelectionManagerSinglePlayer : MonoBehaviour
                 }
                 else
                 {
-                    SelectByClicking(hit.collider.gameObject);   
+                    SelectByClicking(hit.collider.gameObject);
                 }
-                
             }
             else
             {
                 if (!Input.GetKey(KeyCode.LeftShift))
                 {
-                    DeselectAll(); 
+                    DeselectAll();
                 }
-                
             }
         }
-        
-        
+
         if (Input.GetMouseButtonDown(1) && unitsSelected.Count > 0)
         {
             RaycastHit hit;
@@ -73,13 +71,12 @@ public class UnitSelectionManagerSinglePlayer : MonoBehaviour
                 groundMarker.SetActive(true);
             }
         }
-        
+
         if (unitsSelected.Count > 0 && AtLeastOneOffensiveUnit(unitsSelected))
         {
             RaycastHit hit;
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
-            
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, attackable))
             {
                 Debug.Log("Enemy Hovered with mouse");
@@ -90,7 +87,7 @@ public class UnitSelectionManagerSinglePlayer : MonoBehaviour
 
                     foreach (GameObject unit in unitsSelected)
                     {
-                        if (unit.GetComponent<AttackController>())
+                        if (unit != null && unit.GetComponent<AttackController>() != null)
                         {
                             unit.GetComponent<AttackController>().targetToAttack = target;
                         }
@@ -106,67 +103,80 @@ public class UnitSelectionManagerSinglePlayer : MonoBehaviour
 
     private bool AtLeastOneOffensiveUnit(List<GameObject> gameObjects)
     {
-        foreach (GameObject unit in unitsSelected)
+        foreach (GameObject unit in gameObjects)
         {
-            if (unit.GetComponent<AttackController>())
+            if (unit != null && unit.GetComponent<AttackController>() != null)
             {
                 return true;
             }
-            
         }
-
         return false;
     }
 
     private void SelectByClicking(GameObject unit)
     {
         DeselectAll();
-        unitsSelected.Add(unit);
-        TriggerSelectionIndicator(unit, true);
-        EnableUnitMovement(unit, true);
-        
+        if (unit != null)
+        {
+            unitsSelected.Add(unit);
+            TriggerSelectionIndicator(unit, true);
+            EnableUnitMovement(unit, true);
+        }
     }
-    
-   public void DeselectAll()
+
+    public void DeselectAll()
     {
         foreach (GameObject unit in unitsSelected)
         {
-            EnableUnitMovement(unit, false);
-            TriggerSelectionIndicator(unit, false);
+            if (unit != null)
+            {
+                EnableUnitMovement(unit, false);
+                TriggerSelectionIndicator(unit, false);
+            }
         }
         groundMarker.SetActive(false);
         unitsSelected.Clear();
     }
-    
+
     private void EnableUnitMovement(GameObject unit, bool shouldMove)
     {
-        unit.GetComponent<UnitMovementSinglePlayer>().enabled = shouldMove;
+        if (unit != null && unit.GetComponent<UnitMovementSinglePlayer>() != null)
+        {
+            unit.GetComponent<UnitMovementSinglePlayer>().enabled = shouldMove;
+        }
     }
-    
+
     private void MultiSelect(GameObject gameObject)
     {
-        if (unitsSelected.Contains(gameObject) == false)
+        if (gameObject != null)
         {
-            unitsSelected.Add(gameObject);
-            TriggerSelectionIndicator(gameObject, true);
-            EnableUnitMovement(gameObject, true);
-        }
-        else
-        {
-            EnableUnitMovement(gameObject, false);
-            TriggerSelectionIndicator(gameObject, false);
-            unitsSelected.Remove(gameObject);
+            if (!unitsSelected.Contains(gameObject))
+            {
+                unitsSelected.Add(gameObject);
+                TriggerSelectionIndicator(gameObject, true);
+                EnableUnitMovement(gameObject, true);
+            }
+            else
+            {
+                EnableUnitMovement(gameObject, false);
+                TriggerSelectionIndicator(gameObject, false);
+                unitsSelected.Remove(gameObject);
+            }
         }
     }
 
     private void TriggerSelectionIndicator(GameObject unit, bool isVisible)
     {
-        unit.transform.GetChild(1).gameObject.SetActive(isVisible);
+        if (unit != null && unit.transform.childCount > 1)
+        {
+            unit.transform.GetChild(1).gameObject.SetActive(isVisible);
+        }
     }
-    
+
     internal void DragSelect(GameObject unit)
     {
-        if(unitsSelected.Contains(unit) == false){
+        if (unit != null && !unitsSelected.Contains(unit))
+        {
             unitsSelected.Add(unit);
             TriggerSelectionIndicator(unit, true);
             EnableUnitMovement(unit, true);

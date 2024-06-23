@@ -10,7 +10,7 @@ using Random = UnityEngine.Random;
 public class Enemy : MonoBehaviour
 {
     public int health;
-
+    public Unit unit;
     public NavMeshAgent agent;
 
     public Transform player;
@@ -27,13 +27,30 @@ public class Enemy : MonoBehaviour
 
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
+    
+    public float unitHealth;
+    public float unitMaxHealth;
+    public HealthTracker healthTracker;
 
+       
+    public int Points { get; private set; }
+
+    public void AddPoints(int points)
+    {
+        Points += points;
+        Debug.Log($"Unit gained {points} points. Total points: {Points}");
+    }
     private void Awake()
     {
         player = GameObject.Find("Unit").transform;
         agent = GetComponent<NavMeshAgent>();
     }
-
+    void Start()
+    {
+        Points = 0;
+        UnitSelectionManager.Instance.allUnitsList.Add(gameObject);
+        
+    }
     private void Update()
     {
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, isPlayer);
@@ -42,7 +59,12 @@ public class Enemy : MonoBehaviour
         if(!playerInAttackRange && playerInSightRange) Chasing();
         if(playerInAttackRange && playerInSightRange) Attacking();
     }
-
+    
+    private void onDestroy()
+    {
+        UnitSelectionManager.Instance.allUnitsList.Remove(gameObject);
+    }
+    
     private void Patrol()
     {
         if(!walkPointSet) SearchWalkPoint();
@@ -78,37 +100,60 @@ public class Enemy : MonoBehaviour
 
     private void Attacking()
     {
-        agent.SetDestination(transform.position);
-        transform.LookAt(player);
+        agent.SetDestination(transform.position); // Stop moving while attacking
+        transform.LookAt(player); // Face the player
 
         if (!alreadyAttacked)
         {
-            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
-            
+            // Calculate the direction to the player
+            Vector3 directionToPlayer = (player.position - transform.position).normalized;
+
+            // Instantiate the projectile slightly in front of the enemy
+            Vector3 spawnPosition = transform.position + directionToPlayer * 1.5f; // Adjust the offset as needed
+            GameObject instantiatedProjectile = Instantiate(projectile, spawnPosition, Quaternion.identity);
+
+            // Get the rigidbody of the projectile and set its direction
+            Rigidbody rb = instantiatedProjectile.GetComponent<Rigidbody>();
+            rb.velocity = directionToPlayer * 32f; // Set the velocity directly for more consistent results
+
+            // Set the layers for collision detection
+            Projectile projectileScript = instantiatedProjectile.GetComponent<Projectile>();
+            projectileScript.playerLayer = isPlayer;
+            projectileScript.groundLayer = ground;
+
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
     }
 
+
     private void ResetAttack()
     {
         alreadyAttacked = false;
     }
-
-    internal void ReceiveDamage(int damageToInflict)
+    
+    private void UpdateHealthUI()
     {
-        health -= damageToInflict;
-    }
-
-    public void TakeDamage(int damageToInflict)
-    {
-        health -= damageToInflict;
-        if (health <= 0)
+        if (healthTracker != null)
         {
-           Invoke(nameof(DestroyEnemy), 0.5f);
+            healthTracker.UpdateSliderValue(unitHealth, unitMaxHealth);
         }
+        if (unitHealth <= 0 )
+        {
+            unit.EnemyisDead = true;
+            {
+                unit.NombreEnemy -= 1;
+            }
+            Destroy(gameObject);
+        }
+    } 
+    
+    
+
+    internal void TakeDamage(int damageToInflict)
+    {
+        unitHealth -= damageToInflict;
+        UpdateHealthUI();
     }
 
     private void DestroyEnemy()

@@ -20,4 +20,4 @@ public class UnitIdleStateSinglePlayer : StateMachineBehaviour
             animator.SetBool("isFollowing", true);  
         }
     }
-}
+} 

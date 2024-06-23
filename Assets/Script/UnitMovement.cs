@@ -4,7 +4,7 @@ using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.AI;
 using Unity.Netcode.Components;
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
 using UnityEditor;
 // This bypases the default custom editor for NetworkTransform
 // and lets you modify your custom NetworkTransform's properties
@@ -18,15 +18,15 @@ public class UnitMovementEditor : Editor
 /// <summary>
 /// Base authority motion handler that defaults to
 /// owner authoritative mode.
-/// </summary>
+/// </summary>*/
 
-public class UnitMovement : NetworkTransform
+public class UnitMovement : NetworkBehaviour
 {
-        public enum AuthorityModes
+        /*public enum AuthorityModes
         {
             Owner,
             Server
-        }
+        }*/
     private Camera cam;
     private NavMeshAgent agent;
     public LayerMask ground;
@@ -35,7 +35,7 @@ public class UnitMovement : NetworkTransform
     [SerializeField] private Transform basePrefab;
     private Transform spawnedObjetTransform;
     
-    public AuthorityModes AuthorityMode = AuthorityModes.Owner;
+    //public AuthorityModes AuthorityMode = AuthorityModes.Owner;
     
     private NetworkVariable<MyCustomData> randomNumber = new NetworkVariable<MyCustomData>(new MyCustomData
     {
@@ -72,22 +72,53 @@ public class UnitMovement : NetworkTransform
         };
     }
     
-    protected override void Update()
+    private void Update()
     {
         if (!IsOwner)
         {
             return;
         }
     
-        if (IsSpawned && IsAuthority())
+        if (Input.GetKeyDown(KeyCode.T))
         {
-            AuthorityUpdate();
-            return;
+            Debug.Log("Test spawn");
+            
+            spawnedObjetTransform = Instantiate(basePrefab);
+            var networkObject = spawnedObjetTransform.GetComponent<NetworkObject>();
+            if (networkObject != null)
+            {
+                networkObject.Spawn(true);
+            }
+            else
+            {
+                Debug.LogError("Spawned object does not have a NetworkObject component.");
+            }
         }
-        base.Update();
+        
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            Destroy(spawnedObjetTransform.gameObject);
+        }
+        
+        if (Input.GetMouseButtonDown(1))
+        {
+            RaycastHit hit;
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground))
+            {
+                isCommandedToMove = true;
+                agent.SetDestination(hit.point);
+            }
+        }
+
+        if (agent.hasPath == false || agent.remainingDistance <= agent.stoppingDistance)
+        {
+            isCommandedToMove = false;
+        }
     }
     
-    /// <summary>
+    /*/// <summary>
     /// Is only invoked for the authority, and I went ahead and made it
     /// protected and virtual in the event you wanted to derive from this
     /// class and use it for both player and AI related motion.
@@ -133,16 +164,16 @@ public class UnitMovement : NetworkTransform
         {
             isCommandedToMove = false;
         }
-    }
-    protected override bool OnIsServerAuthoritative()
+    }*/
+    /*protected override bool OnIsServerAuthoritative()
     {
         return AuthorityMode == AuthorityModes.Server;
-    }
+    }*/
  
-    private bool IsAuthority()
+    /*private bool IsAuthority()
     {
         return AuthorityMode == AuthorityModes.Owner ? IsOwner : IsServer;
-    }
+    }*/
     
     [ServerRpc]
     private void TestServerRpc(ServerRpcParams serverRpcParams)
@@ -156,11 +187,11 @@ public class UnitMovement : NetworkTransform
         Debug.Log("TestClientRpc");
     }
     
-    [Rpc(SendTo.ClientsAndHost)]
+   /* [Rpc(SendTo.ClientsAndHost)]
     private void TestClientAndHostRpc(int value, ulong sourceNetworkObjectId)
     {
         Debug.Log("Client & Host Rpc" );
-    }
+    }*/
     
     
  

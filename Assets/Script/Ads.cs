@@ -7,7 +7,7 @@ public class Ads : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
     [SerializeField] Button _showAdButton;
     [SerializeField] string _androidAdUnitId = "Rewarded_Android";
     [SerializeField] string _iOSAdUnitId = "Rewarded_iOS";
-    string _adUnitId = null; // This will remain null for unsupported platforms
+    string _adUnitId = "Rewarded_Android"; // This will remain null for unsupported platforms
  
     void Awake()
     {   

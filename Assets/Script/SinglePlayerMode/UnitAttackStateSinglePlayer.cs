@@ -49,7 +49,7 @@ public class UnitAttackStateSinglePlayer : StateMachineBehaviour
     private void Attack()
     {
         var damageToInflict = attackController.unitDamage;
-        attackController.targetToAttack.GetComponent<Unit>().TakeDamage(damageToInflict);
+        attackController.targetToAttack.GetComponent<UnitSinglePlayer>().TakeDamage(damageToInflict);
 
     }
     private void LookAtTarget()

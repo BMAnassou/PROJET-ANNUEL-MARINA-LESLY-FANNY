@@ -19,17 +19,22 @@ public class DropdownManager : MonoBehaviour
                 DropdownValueChanged(elementDropdown);
             });
         }
+        if (validateButton != null)
+        {
+            validateButton.onClick.AddListener(OnValidateButtonClick);
+        }
+        
         // Désactiver toutes les images et le bouton de validation par défaut
         airImage.gameObject.SetActive(false);
         earthImage.gameObject.SetActive(false);
         fireImage.gameObject.SetActive(false);
         waterImage.gameObject.SetActive(false);
-        
     }
 
     void DropdownValueChanged(TMP_Dropdown change)
     {
         // Désactiver toutes les images
+        Debug.Log("Désactivation de toutes les images");
         airImage.gameObject.SetActive(false);
         earthImage.gameObject.SetActive(false);
         fireImage.gameObject.SetActive(false);
@@ -39,20 +44,26 @@ public class DropdownManager : MonoBehaviour
         switch ((ChooseElement.Elements)change.value)
         {
             case ChooseElement.Elements.Air:
+                Debug.Log("Activation de l'image Air");
                 airImage.gameObject.SetActive(true);
                 break;
             case ChooseElement.Elements.Earth:
+                Debug.Log("Activation de l'image Earth");
                 earthImage.gameObject.SetActive(true);
                 break;
             case ChooseElement.Elements.Fire:
+                Debug.Log("Activation de l'image Fire");
                 fireImage.gameObject.SetActive(true);
                 break;
             case ChooseElement.Elements.Water:
+                Debug.Log("Activation de l'image Water - Avant");
                 waterImage.gameObject.SetActive(true);
+                Debug.Log("Activation de l'image Water - Après");
+                break;
+            default:
+                Debug.LogWarning("Valeur de dropdown inconnue : " + change.value);
                 break;
         }
-
-        
 
         // Stocker la sélection dans PlayerPrefs
         PlayerPrefs.SetInt("SelectedElement", change.value);

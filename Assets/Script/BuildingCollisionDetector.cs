@@ -6,30 +6,19 @@ public class BuildingCollisionDetector : MonoBehaviour
 {
     public bool isColliding = false;
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("Building"))
+        if (collision.gameObject.layer != LayerMask.NameToLayer("Ground"))
         {
             isColliding = true;
-            Debug.Log("Collision detected: Enter");
         }
     }
 
-    void OnTriggerExit(Collider other)
+    void OnCollisionExit(Collision collision)
     {
-        if (other.CompareTag("Building"))
+        if (collision.gameObject.layer != LayerMask.NameToLayer("Ground"))
         {
             isColliding = false;
-            Debug.Log("Collision detected: Exit");
-        }
-    }
-
-    void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Building"))
-        {
-            isColliding = true;
-            Debug.Log("Collision detected: Stay");
         }
     }
 }
