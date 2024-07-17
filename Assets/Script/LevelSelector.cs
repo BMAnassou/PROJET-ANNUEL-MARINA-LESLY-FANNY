@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelector : MonoBehaviour
 {
-   public void LoadLevelPassed(string levelName)
+   public void LoadLevelPassed()
    {
-    SceneManager.LoadScene(levelName);
+    SceneManager.LoadScene(3);
    }
 }

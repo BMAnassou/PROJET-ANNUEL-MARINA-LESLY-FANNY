@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FishNetScene.unity
     guid: 3b989afe82387c24486bde6e4bf6541d
+  - enabled: 1
+    path: Assets/Scenes/A tester/MainMenu.unity
+    guid: 4b5708c842eacf841bb773bcb5114ad8
+  - enabled: 1
+    path: Assets/Scenes/A tester/NiveauMulti.unity
+    guid: 0f08284ea90331c41b3149e83faa3aae
+  - enabled: 1
+    path: Assets/Scenes/A tester/NextLevelTestScene.unity
+    guid: 2d817c3e228d8294ca48e44964bdedae
   m_configObjects: {}

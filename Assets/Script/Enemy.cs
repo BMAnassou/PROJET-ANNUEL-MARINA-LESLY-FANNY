@@ -10,7 +10,6 @@ using Random = UnityEngine.Random;
 public class Enemy : MonoBehaviour
 {
     public int health;
-    public Unit unit;
     public NavMeshAgent agent;
 
     public Transform player;
@@ -32,6 +31,12 @@ public class Enemy : MonoBehaviour
     public float unitMaxHealth;
     public HealthTracker healthTracker;
 
+    public VictoryManager victorymanager;
+
+    public CoinsManager coinsmanager;
+
+    public UnitSinglePlayer unitsingleplayer;
+
        
     public int Points { get; private set; }
 
@@ -49,8 +54,11 @@ public class Enemy : MonoBehaviour
     {
         Points = 0;
         UnitSelectionManager.Instance.allUnitsList.Add(gameObject);
+
+        coinsmanager = FindObjectOfType<CoinsManager>();
         
     }
+
     private void Update()
     {
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, isPlayer);
@@ -63,6 +71,11 @@ public class Enemy : MonoBehaviour
     private void onDestroy()
     {
         UnitSelectionManager.Instance.allUnitsList.Remove(gameObject);
+
+        if (coinsmanager != null)
+        {
+            coinsmanager.UpdateCoins(coinsmanager.Coins);
+        }
     }
     
     private void Patrol()
@@ -100,6 +113,15 @@ public class Enemy : MonoBehaviour
 
     private void Attacking()
     {
+
+        //empeche d'acceder a la position du player quand il est detruit
+        if(player == null)
+        {
+            Debug.LogWarning("Player transform is null. Cannot attack");
+            return;
+        }
+
+
         agent.SetDestination(transform.position); // Stop moving while attacking
         transform.LookAt(player); // Face the player
 
@@ -138,15 +160,24 @@ public class Enemy : MonoBehaviour
         {
             healthTracker.UpdateSliderValue(unitHealth, unitMaxHealth);
         }
-        if (unitHealth <= 0 )
+        if (unitsingleplayer.unitHealth <= 0 )
         {
-            unit.EnemyisDead = true;
-            {
-                unit.NombreEnemy -= 1;
-            }
-            Destroy(gameObject);
+            /*Debug.Log("ennemi tuer");
+            victorymanager.isDeadEnemy = true;
+            Destroy(gameObject);*/
+            HandleDeath();//CHATGPT RAJOUT
         }
-    } 
+    }
+
+    private void HandleDeath()
+     {
+        if (gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Enemy died");
+            victorymanager.isDeadEnemy = true;
+        }
+        Destroy(gameObject);
+     }
     
     
 

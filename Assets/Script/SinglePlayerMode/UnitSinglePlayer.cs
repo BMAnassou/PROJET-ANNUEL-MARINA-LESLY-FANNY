@@ -7,6 +7,8 @@ public class UnitSinglePlayer : MonoBehaviour
 {
     public float unitHealth;
     public float unitMaxHealth;
+    public VictoryManager victorymanager;
+    public CoinsManager coinsmanager;
 
     public ChooseElement.Elements unitElement;
     public AttackController attackController;
@@ -20,18 +22,21 @@ public class UnitSinglePlayer : MonoBehaviour
     {
         
         UnitSelectionManagerSinglePlayer.Instance.allUnitsList.Add(gameObject);
+
+        unitHealth = unitMaxHealth;//CHATGPT RAJOUT
+
         switch (unitElement)
         {
             case ChooseElement.Elements.Air:
-                unitHealth = unitMaxHealth;
+                //unitHealth = unitMaxHealth;//CHATGPT SUPPRESSION
                 AirProperties();
                 break;
             case ChooseElement.Elements.Earth:
-                unitHealth = unitMaxHealth;
+                //unitHealth = unitMaxHealth;
                 EarthProperties();
                 break;
             case ChooseElement.Elements.Fire:
-                unitHealth = unitMaxHealth;
+                //unitHealth = unitMaxHealth;
                 FireProperties();
                 break;
             case ChooseElement.Elements.Water:
@@ -44,11 +49,26 @@ public class UnitSinglePlayer : MonoBehaviour
         AssignElement((ChooseElement.Elements)selectedElementIndex);
 
         UpdateHealthUI();
+
+        // Incremente le nombre d'ennemis si c'est un ennemi
+        if (gameObject.CompareTag("Enemy"))
+        {
+            victorymanager.IncrementEnemyCount();
+        }
+
+
     }
 
     private void OnDestroy()
     {
         UnitSelectionManagerSinglePlayer.Instance.allUnitsList.Remove(gameObject);
+
+        // Decremente le nombre d'ennemis si c'est un ennemi
+        if (gameObject.CompareTag("Enemy"))
+        {
+            victorymanager.DecrementEnemyCount();
+        }
+
     }
 
     private void UpdateHealthUI()
@@ -59,7 +79,7 @@ public class UnitSinglePlayer : MonoBehaviour
         }
         if (unitHealth <= 0)
         {
-            Destroy(gameObject);
+            HandleDeath();
         }
     }
 
@@ -68,6 +88,21 @@ public class UnitSinglePlayer : MonoBehaviour
         unitHealth -= damageToInflict;
         UpdateHealthUI();
     }
+
+    private void HandleDeath()
+        {
+            if (gameObject.CompareTag("Player"))
+            {
+                Debug.Log("Player died");
+            }
+            else if (gameObject.CompareTag("Enemy"))
+            {
+                Debug.Log("ennemi tuer");
+                victorymanager.isDeadEnemy = true;
+                coinsmanager.EnemyisDead = true;
+            }
+            Destroy(gameObject);
+        }
 
     private void AssignElement(ChooseElement.Elements element)
     {
