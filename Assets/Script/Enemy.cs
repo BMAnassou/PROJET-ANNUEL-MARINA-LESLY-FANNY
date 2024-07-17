@@ -36,6 +36,9 @@ public class Enemy : MonoBehaviour
     public CoinsManager coinsmanager;
 
     public UnitSinglePlayer unitsingleplayer;
+    
+    public EnemySpawner spawner;
+
 
        
     public int Points { get; private set; }
@@ -47,7 +50,7 @@ public class Enemy : MonoBehaviour
     }
     private void Awake()
     {
-        player = GameObject.Find("Unit").transform;
+        player = GameObject.FindWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
     }
     void Start()
@@ -176,7 +179,7 @@ public class Enemy : MonoBehaviour
             Debug.Log("Enemy died");
             victorymanager.isDeadEnemy = true;
         }
-        Destroy(gameObject);
+        //Destroy(gameObject);
      }
     
     
@@ -189,6 +192,18 @@ public class Enemy : MonoBehaviour
 
     private void DestroyEnemy()
     {
+        
+        if (spawner != null)
+        {
+            spawner.currentEnemy.Remove(this.gameObject);
+
+        }
+        
         Destroy(gameObject);
+    }
+
+    public void SetSpawner(EnemySpawner _spawner)
+    {
+        spawner = _spawner;
     }
 }

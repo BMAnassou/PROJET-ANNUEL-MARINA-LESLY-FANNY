@@ -184,5 +184,4 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  attackController: {fileID: 0}
-  unitDamage: 10
+  unitDamage: 1

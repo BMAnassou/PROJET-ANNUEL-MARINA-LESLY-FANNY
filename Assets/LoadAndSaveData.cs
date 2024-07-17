@@ -8,7 +8,7 @@ public class LoadAndSaveData : MonoBehaviour
     {
         if (Instance == null)
         {
-            Debug.LogWarning("Il n'y a plus d'une instance de LaodAndSaveData dans la scene");
+            Debug.LogWarning("Il n'y a plus d'une instance de LoadAndSaveData dans la scene");
             Instance = this;
             DontDestroyOnLoad(gameObject); // Conserver cet objet a travers les scenes
         }
