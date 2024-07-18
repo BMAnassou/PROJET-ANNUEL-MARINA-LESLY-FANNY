@@ -128,8 +128,8 @@ GameObject:
   - component: {fileID: -5863693938415586295}
   - component: {fileID: 7688670953885497964}
   - component: {fileID: 3701122423869255674}
-  - component: {fileID: 353600574702415445}
   - component: {fileID: -5223890123902548305}
+  - component: {fileID: 1459847987350325274}
   m_Layer: 8
   m_Name: UnitEnemyMulti
   m_TagString: Enemy
@@ -262,15 +262,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c298a131428ec224789b59c8dffac104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyisDead: 0
   unitHealth: 0
   unitMaxHealth: 100
   healthTracker: {fileID: 6934512492215895202}
-  Coins: 0
-  NombreEnemy: 0
-  coins: {fileID: 0}
-  victoryUI: {fileID: 0}
-  victoryCoins: {fileID: 0}
 --- !u!114 &5006752483797187379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,39 +412,6 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 55ed47761e65e7d4d93ae8910cc55292, type: 2}
   m_BuildHeightMesh: 0
---- !u!114 &353600574702415445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7367833486254308432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d23ebb2fa1f02644e93172376c130337, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  unit: {fileID: 0}
-  agent: {fileID: 0}
-  player: {fileID: 0}
-  ground:
-    serializedVersion: 2
-    m_Bits: 64
-  isPlayer:
-    serializedVersion: 2
-    m_Bits: 128
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 0
-  timeBetweenAttacks: 0
-  projectile: {fileID: 0}
-  sightRange: 0
-  attackRange: 0
-  playerInSightRange: 0
-  playerInAttackRange: 0
-  unitHealth: 0
-  unitMaxHealth: 0
-  healthTracker: {fileID: 0}
 --- !u!114 &-5223890123902548305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,6 +433,42 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &1459847987350325274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7367833486254308432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc79d58719187b044b61e6c6c874e7fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  agent: {fileID: 0}
+  player: {fileID: 0}
+  ground:
+    serializedVersion: 2
+    m_Bits: 64
+  isPlayer:
+    serializedVersion: 2
+    m_Bits: 128
+  walkPoint: {x: 0, y: 0, z: 0}
+  walkPointRange: 30
+  timeBetweenAttacks: 1
+  projectile: {fileID: 5763754495092001077, guid: 754e99b85ac3a904ea206092cfd26b8c, type: 3}
+  sightRange: 10
+  attackRange: 5
+  playerInSightRange: 0
+  playerInAttackRange: 0
+  unitHealth: 0
+  unitMaxHealth: 100
+  healthTracker: {fileID: 6934512492215895202}
+  victorymanager: {fileID: 0}
+  coinsmanager: {fileID: 0}
+  unit: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1001 &4707812571809650470
 PrefabInstance:
   m_ObjectHideFlags: 0
