@@ -20,15 +20,29 @@ public class EnemySpawner : MonoBehaviour
     public float spawnRange = 10f;
     public List<GameObject> currentEnemy = new List<GameObject>();
     public Enemy enemy;
-    
+
     void Start()
     {
+        if (waves == null || waves.Length == 0)
+        {
+            Debug.LogWarning("Waves array is not initialized or empty.");
+            return;
+        }
+
+        foreach (var wave in waves)
+        {
+            if (wave == null || wave.GetEnemySpawnList() == null)
+            {
+                Debug.LogWarning("Wave or enemy spawn list is null.");
+                return;
+            }
+        }
+
         SpawnWave();
     }
 
     void Update()
     {
-        
         if (currentEnemy.Count == 0)
         {
             Debug.Log("current Enemy == 0, Current wave += 1");
@@ -50,6 +64,12 @@ public class EnemySpawner : MonoBehaviour
 
         foreach (GameObject enemyPrefab in waves[currentWave].GetEnemySpawnList())
         {
+            if (enemyPrefab == null)
+            {
+                Debug.LogWarning("Enemy prefab is null.");
+                continue;
+            }
+
             Vector3 spawnLocation = FindSpawnLoc();
             GameObject newEnemy = Instantiate(enemyPrefab, spawnLocation, Quaternion.identity);
             currentEnemy.Add(newEnemy);
@@ -59,6 +79,12 @@ public class EnemySpawner : MonoBehaviour
             {
                 enemy.SetSpawner(this);
             }
+            else
+            {
+                Debug.LogWarning("Enemy component not found on instantiated enemy prefab!");
+            }
+
+            Debug.Log($"Spawned enemy at {spawnLocation}, currentEnemy count: {currentEnemy.Count}");
         }
     }
 
@@ -86,5 +112,19 @@ public class EnemySpawner : MonoBehaviour
 
         Debug.LogWarning("Failed to find a valid spawn location after maximum attempts. Returning default position.");
         return transform.position;
+    }
+
+    public void OnEnemyDestroyed(GameObject enemy)
+    {
+        Debug.Log($"OnEnemyDestroyed called for {enemy}");
+        if (currentEnemy.Contains(enemy))
+        {
+            currentEnemy.Remove(enemy);
+            Debug.Log($"Enemy removed from list, currentEnemy count: {currentEnemy.Count}");
+        }
+        else
+        {
+            Debug.LogWarning("Attempted to remove enemy that is not in the list.");
+        }
     }
 }
