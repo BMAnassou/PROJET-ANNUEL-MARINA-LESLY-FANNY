@@ -26,9 +26,9 @@ public class EnemyMulti : MonoBehaviour
     public float unitMaxHealth;
     public HealthTracker healthTracker;
 
-    public VictoryManager victorymanager;
+    //public VictoryManager victorymanager;
 
-    public CoinsManager coinsmanager;
+    //public CoinsManager coinsmanager;
 
     public Unit unit;
 
@@ -74,7 +74,7 @@ public class EnemyMulti : MonoBehaviour
         Points = 0;
         UnitSelectionManager.Instance.allUnitsList.Add(gameObject);
 
-        coinsmanager = FindObjectOfType<CoinsManager>();
+       /* coinsmanager = FindObjectOfType<CoinsManager>();
         if (coinsmanager == null)
         {
             Debug.LogError("CoinsManager not found in the scene.");
@@ -82,7 +82,7 @@ public class EnemyMulti : MonoBehaviour
         else
         {
             Debug.Log("CoinsManager found");
-        }
+        }*/
     }
 
     private void Update()
@@ -100,14 +100,14 @@ public class EnemyMulti : MonoBehaviour
 
         UnitSelectionManager.Instance.allUnitsList.Remove(gameObject);
 
-        if (coinsmanager != null)
+        /*if (coinsmanager != null)
         {
             coinsmanager.UpdateCoins(coinsmanager.Coins);
         }
         else
         {
             Debug.LogWarning("CoinsManager is null!");
-        }
+        }*/
 
         if (spawner != null)
         {
@@ -205,7 +205,7 @@ public class EnemyMulti : MonoBehaviour
         if (gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Enemy died");
-            victorymanager.isDeadEnemy = true;
+            //victorymanager.isDeadEnemy = true;
         }
     }
 

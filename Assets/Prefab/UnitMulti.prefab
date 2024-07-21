@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 3832887559677610333}
   - component: {fileID: 4963972335822634967}
   - component: {fileID: -3462529186910105015}
+  - component: {fileID: -8074942319488624800}
   m_Layer: 7
   m_Name: UnitMulti
   m_TagString: Player
@@ -36,7 +37,7 @@ Transform:
   m_GameObject: {fileID: 693826190382472290}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.69, y: 0.97, z: 49.375496}
+  m_LocalPosition: {x: 0, y: 1.12, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -152,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1798652342
-  InScenePlacedSourceGlobalObjectIdHash: 0
+  GlobalObjectIdHash: 2793053086
+  InScenePlacedSourceGlobalObjectIdHash: 1798652342
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
@@ -286,6 +287,20 @@ MonoBehaviour:
   SlerpPosition: 0
   AuthorityMode: 0
   MoveSpeed: 3
+--- !u!114 &-8074942319488624800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693826190382472290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TransitionStateInfoList: []
+  m_Animator: {fileID: 3832887559677610333}
 --- !u!1 &8411484407770197059
 GameObject:
   m_ObjectHideFlags: 0

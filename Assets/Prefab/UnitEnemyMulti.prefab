@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 3701122423869255674}
   - component: {fileID: -5223890123902548305}
   - component: {fileID: 1459847987350325274}
+  - component: {fileID: -8103708245776433542}
   m_Layer: 8
   m_Name: UnitEnemyMulti
   m_TagString: Enemy
@@ -457,7 +458,7 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 30
   timeBetweenAttacks: 1
-  projectile: {fileID: 5763754495092001077, guid: 754e99b85ac3a904ea206092cfd26b8c, type: 3}
+  projectile: {fileID: 5763754495092001077, guid: 3191a4b8559a1fd46a5a424e060166bc, type: 3}
   sightRange: 10
   attackRange: 5
   playerInSightRange: 0
@@ -469,6 +470,39 @@ MonoBehaviour:
   coinsmanager: {fileID: 0}
   unit: {fileID: 0}
   spawner: {fileID: 0}
+--- !u!114 &-8103708245776433542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7367833486254308432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af412a1c1bf51a4295eb36c8bf596f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseUnreliableDeltas: 0
+  SyncPositionX: 1
+  SyncPositionY: 1
+  SyncPositionZ: 1
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 0
+  SyncScaleY: 0
+  SyncScaleZ: 0
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  UseQuaternionSynchronization: 0
+  UseQuaternionCompression: 0
+  UseHalfFloatPrecision: 0
+  InLocalSpace: 0
+  Interpolate: 1
+  SlerpPosition: 0
+  AuthorityMode: 0
+  MoveSpeed: 3
 --- !u!1001 &4707812571809650470
 PrefabInstance:
   m_ObjectHideFlags: 0

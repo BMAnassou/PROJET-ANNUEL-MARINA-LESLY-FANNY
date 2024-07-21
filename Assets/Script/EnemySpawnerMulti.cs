@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Mirror; // Ajouter Mirror pour les fonctionnalités de réseau
+using Unity.Netcode; 
 
-public class EnemySpawnerMulti : NetworkBehaviour  // Hériter de NetworkBehaviour au lieu de MonoBehaviour
+public class EnemySpawnerMulti : NetworkBehaviour
 {
     [System.Serializable]
     public class WaveContent
@@ -24,7 +24,7 @@ public class EnemySpawnerMulti : NetworkBehaviour  // Hériter de NetworkBehavio
 
     void Start()
     {
-        if (!isServer)  // Assurez-vous que ce code ne s'exécute que sur le serveur (l'hôte)
+        if (!IsHost)  
         {
             return;
         }
@@ -49,7 +49,7 @@ public class EnemySpawnerMulti : NetworkBehaviour  // Hériter de NetworkBehavio
 
     void Update()
     {
-        if (!isServer)  // Assurez-vous que ce code ne s'exécute que sur le serveur (l'hôte)
+        if (!IsHost)  
         {
             return;
         }
@@ -67,7 +67,7 @@ public class EnemySpawnerMulti : NetworkBehaviour  // Hériter de NetworkBehavio
 
     void SpawnWave()
     {
-        if (!isServer)  // Assurez-vous que ce code ne s'exécute que sur le serveur (l'hôte)
+        if (!IsHost)  
         {
             return;
         }
@@ -88,6 +88,7 @@ public class EnemySpawnerMulti : NetworkBehaviour  // Hériter de NetworkBehavio
 
             Vector3 spawnLocation = FindSpawnLoc();
             GameObject newEnemy = Instantiate(enemyPrefab, spawnLocation, Quaternion.identity);
+            newEnemy.GetComponent<NetworkObject>().Spawn();
             currentEnemy.Add(newEnemy);
 
             enemy = newEnemy.GetComponent<EnemyMulti>();
