@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: -5223890123902548305}
   - component: {fileID: 1459847987350325274}
   - component: {fileID: -8103708245776433542}
+  - component: {fileID: 4109500471929715952}
   m_Layer: 8
   m_Name: UnitEnemyMulti
   m_TagString: Enemy
@@ -294,7 +295,7 @@ Animator:
   m_GameObject: {fileID: 7367833486254308432}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 80271e2c1a2cdf64a8c8aec20a42ee95, type: 2}
+  m_Controller: {fileID: 9100000, guid: 36863b0e9cd5c554aa4bcf0cd5b40ab9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -466,8 +467,6 @@ MonoBehaviour:
   unitHealth: 0
   unitMaxHealth: 100
   healthTracker: {fileID: 6934512492215895202}
-  victorymanager: {fileID: 0}
-  coinsmanager: {fileID: 0}
   unit: {fileID: 0}
   spawner: {fileID: 0}
 --- !u!114 &-8103708245776433542
@@ -503,6 +502,20 @@ MonoBehaviour:
   SlerpPosition: 0
   AuthorityMode: 0
   MoveSpeed: 3
+--- !u!114 &4109500471929715952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7367833486254308432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0348fe058d081cc4f959a98c9a93bd22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TransitionStateInfoList: []
+  m_Animator: {fileID: 8200018542655783219}
 --- !u!1001 &4707812571809650470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -709,8 +722,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6171146850500040549, guid: c0fb8fcb57b244e4eb6dbc7b287d77cf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 915451625184100875}
   m_SourcePrefab: {fileID: 100100000, guid: c0fb8fcb57b244e4eb6dbc7b287d77cf, type: 3}
+--- !u!1 &4578169184528384610 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6171146850500040549, guid: c0fb8fcb57b244e4eb6dbc7b287d77cf, type: 3}
+  m_PrefabInstance: {fileID: 7650698502374626567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &915451625184100875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4578169184528384610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ffcfbebeaf97aa4f9f533f915fbcfde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  facingCamera: {fileID: 0}
 --- !u!114 &6934512492215895202 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 725338605063410085, guid: c0fb8fcb57b244e4eb6dbc7b287d77cf, type: 3}

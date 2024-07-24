@@ -28,11 +28,11 @@ public class VictoryManager : MonoBehaviour
     // Methode pour mettre a jour le nombre d'ennemis restants
     public void UpdateEnemyCount()
     {
-        if(NombreEnemy <= 0)
+       /* if(NombreEnemy <= 0)
         {
             victoryScreen.SetActive(true);
             Debug.Log("Victory! All enemies defeated.");
-        }
+        }*/
     }
     
     // Methode pour decrementer le nombre d'ennemis

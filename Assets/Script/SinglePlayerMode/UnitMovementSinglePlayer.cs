@@ -8,7 +8,7 @@ using UnityEngine.AI;
 public class UnitMovementSinglePlayer : MonoBehaviour
 {
     private Camera _cam;
-    private NavMeshAgent _agent;
+    private NavMeshAgent agent;
     public LayerMask ground;
     public bool isCommandedToMove;
     
@@ -16,7 +16,7 @@ public class UnitMovementSinglePlayer : MonoBehaviour
     private void Start()
     {
         _cam = Camera.main;
-        _agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
         
     }
     
@@ -32,11 +32,11 @@ public class UnitMovementSinglePlayer : MonoBehaviour
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground))
             {
                 isCommandedToMove = true;
-                _agent.SetDestination(hit.point);
+                agent.SetDestination(hit.point);
             }
         }
 
-        if (_agent.hasPath == false || _agent.remainingDistance <= _agent.stoppingDistance)
+        if (agent.hasPath == false || agent.remainingDistance <= agent.stoppingDistance)
         {
             isCommandedToMove = false;
         }

@@ -21,7 +21,8 @@ public class LoadSpecificScene : MonoBehaviour
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(4);
-        //LoadAndSaveData.SaveCoins();
+        SceneManager.LoadScene(2);
+        
     }
 }
+ 

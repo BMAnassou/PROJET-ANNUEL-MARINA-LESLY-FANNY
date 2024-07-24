@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Animations;
 
+
 public class UnitFollowState : StateMachineBehaviour
 {
     private AttackController attackController;
@@ -14,6 +15,22 @@ public class UnitFollowState : StateMachineBehaviour
     {
         attackController = animator.transform.GetComponent<AttackController>();
         agent = animator.transform.GetComponent<NavMeshAgent>();
+
+        if (attackController == null)
+        {
+            Debug.LogError("AttackController not found on the unit.");
+        }
+        
+        if (agent == null)
+        {
+            Debug.LogError("NavMeshAgent not found on the unit.");
+        }
+        else
+        {
+            Debug.Log("NavMeshAgent destination set to null at start.");
+            agent.SetDestination(animator.transform.position);
+        }
+
         attackController.setFollowMaterial();
     }
 
@@ -28,15 +45,26 @@ public class UnitFollowState : StateMachineBehaviour
         {
             if (animator.transform.GetComponent<UnitMovement>().isCommandedToMove == false)
             {
-                agent.SetDestination(attackController.targetToAttack.position);
-                Debug.Log("Following target: " + attackController.targetToAttack.name);
-                
-                float distanceFromTarget = Vector3.Distance(attackController.targetToAttack.position, animator.transform.position);
-                if (distanceFromTarget < attackingDistance)
+                if (agent != null)
                 {
-                    agent.SetDestination(animator.transform.position);
-                    animator.SetBool("isAttacking", true);
-                    Debug.Log("Entering attack state.");
+                    agent.SetDestination(attackController.targetToAttack.position);
+                    Debug.Log("Following target: " + attackController.targetToAttack.name);
+                    
+                    float distanceFromTarget = Vector3.Distance(attackController.targetToAttack.position, animator.transform.position);
+                    if (distanceFromTarget < attackingDistance)
+                    {
+                        agent.SetDestination(animator.transform.position);
+                        animator.SetBool("isAttacking", true);
+                        Debug.Log("Entering attack state.");
+                    }
+                    else
+                    {
+                        Debug.Log("Distance from target: " + distanceFromTarget + " (attacking distance: " + attackingDistance + ")");
+                    }
+                }
+                else
+                {
+                    Debug.LogError("NavMeshAgent is null, cannot follow the target.");
                 }
             }
         }
